@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import {getBalance} from './SimpleStorageApi';
+import {getBalance} from './api/SimpleStorageApi';
+import BalanceForm from './SetBalanceForm';
 import './App.css';
 
 function App() {
@@ -20,8 +21,13 @@ function App() {
               <p>No balance yet.</p>
           )}
           <button onClick={handleGetBalanceClick}>Get Balance</button>
+
+            <h1>Balance App</h1>
+            <BalanceForm /> {/* Render the BalanceForm component */}
         </header>
+
       </div>
+
   );
 }
 
