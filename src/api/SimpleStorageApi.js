@@ -1,5 +1,4 @@
-// RollApi.js
-const BASE_URL = 'http://172.233.196.238:3001'; // Replace with your API URL
+const BASE_URL = 'http://172.233.196.238:3001';
 
 export const getBalance = async () => {
     try {
@@ -25,7 +24,6 @@ export const postBalance = async (outputValue) => {
                 x : outputValue
             }),
         });
-
         if (response.ok) {
             const data = await response.json();
             return data.balance.output;

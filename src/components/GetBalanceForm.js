@@ -6,7 +6,6 @@ function GetBalance() {
     const [balance, setBalance] = useState(null);
 
     const handleGetBalanceClick = async () => {
-
         try {
             const current_balance = await getBalance();
             setBalance(current_balance);

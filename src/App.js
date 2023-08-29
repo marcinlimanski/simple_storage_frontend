@@ -3,7 +3,6 @@ import GetBalanceForm from "./components/GetBalanceForm";
 import './App.css';
 
 function App() {
-
   return (
       <div className="App">
         <header className="App-header">
