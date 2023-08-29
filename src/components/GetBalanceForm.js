@@ -17,7 +17,7 @@ function GetBalance() {
     return (
         <div>
             <header className="GetBalance-header">
-                <h1>Storage Balance</h1>
+                <h2 className="h3 mb-3 fw-normal">Storage Balance</h2>
                 {balance !== null ? (
                     <p>Current storage balance: {balance}</p>
                 ) : (

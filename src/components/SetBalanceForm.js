@@ -25,16 +25,17 @@ const BalanceForm = () => {
 
     return (
         <div>
+            <h2 className="h3 mb-3 fw-normal">Set new balance</h2>
             <div>
-                <h1>Set new balance</h1>
                 <input
                     type="text"
                     placeholder="Enter output value"
                     value={inputValue}
                     onChange={handleInputChange}
                 />
-                <button onClick={handleButtonClick}>Submit</button>
             </div>
+            <br/>
+            <button onClick={handleButtonClick}>Submit</button>
             {isLoading ? (
                 <p>Updating balance...</p> // Display loading indicator while isLoading is true
             ) : (
