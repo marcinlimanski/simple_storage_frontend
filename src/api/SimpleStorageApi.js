@@ -1,5 +1,5 @@
 // RollApi.js
-const BASE_URL = 'http://localhost:3001'; // Replace with your API URL
+const BASE_URL = 'http://172.233.196.238:3001'; // Replace with your API URL
 
 export const getBalance = async () => {
     try {

@@ -1,7 +1,6 @@
-// src/BalanceForm.js
-
 import React, { useState } from 'react';
-import { postBalance } from './api/SimpleStorageApi';
+import { postBalance } from '../api/SimpleStorageApi';
+import '../App.css';
 
 const BalanceForm = () => {
     const [output, setOutput] = useState('');
@@ -27,6 +26,7 @@ const BalanceForm = () => {
     return (
         <div>
             <div>
+                <h1>Set new balance</h1>
                 <input
                     type="text"
                     placeholder="Enter output value"
