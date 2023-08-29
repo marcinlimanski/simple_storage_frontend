@@ -17,7 +17,7 @@ const BalanceForm = () => {
             const newOutput = await postBalance(inputValue);
             setOutput(newOutput);
         } catch (error) {
-            // Handle error if needed
+            console.error(error);
         } finally {
             setIsLoading(false); // Set loading state back to false
         }

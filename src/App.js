@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import SetBalanceForm from "./components/SetBalanceForm";
 import GetBalanceForm from "./components/GetBalanceForm";
 import './App.css';
